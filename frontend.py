@@ -18,6 +18,8 @@ uploaded_file = st.file_uploader("Upload an image", type=["jpg", "png", "jpeg"])
 if st.button("Do OCR"):
     if uploaded_file is not None:
         st.text("Performing OCR")
+        # Display the uploaded image
+        st.image(uploaded_file, caption="Uploaded Image", use_column_width=True)
         ocr_result = perform_ocr(model_name, uploaded_file)
         st.text("This the OCR Result")
         
