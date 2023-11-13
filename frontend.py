@@ -9,7 +9,7 @@ from converter_json_to_csv import convert_json
 
 st.title("OCR MONITORING HARIAN v1")
 
-model_name = st.selectbox("Select OCR Model", ["monitoring_harian_air_v1"])
+model_name = st.selectbox("Select OCR Model", ["wq_testkit_dtc_v1"])
 
 # Image upload
 uploaded_file = st.file_uploader("Upload an image", type=["jpg", "png", "jpeg"])
